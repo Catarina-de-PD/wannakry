@@ -61,15 +61,28 @@ class _ApiConfigState extends State<ApiConfig> {
           body: Center(
               child: Column(
             children: [
-              ElevatedButton(
+              Row(
+                children: [
+ElevatedButton(
                   onPressed: () {
                     getTask();
                   },
-                  child: Text('Search all tasks')),
+                  child: Text('Search task')),
               Text("User ID: ${myTask.userId}"),
               Text('Task ID: ${myTask.taskId}'),
               Text('Title: ${myTask.title}'),
               Text('Completed: ${myTask.completed}'),
+              SizedBox(
+                height: 20,
+              ),
+              ElevatedButton(
+                  onPressed: () {
+                    getAllTasks();
+                  },
+                  child: Text('Search all tasks')),
+                ],
+              )
+              ,
               SizedBox(
                 height: 50,
               ),

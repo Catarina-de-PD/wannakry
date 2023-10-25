@@ -1,5 +1,4 @@
 // ignore_for_file: avoid_print, unused_import
-import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:wannakry/api.dart';
 import 'package:wannakry/cad_game.dart';
